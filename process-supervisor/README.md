@@ -1,18 +1,18 @@
-# 🛠️ C Linux Process Supervisor (Mini-Systemd)
+# C Linux Process Supervisor (Mini-Systemd)
 
 A robust, lightweight process manager written in POSIX-compliant C. Acting as a mini-`systemd`, this project is specifically designed for embedded systems and IoT Gateways (e.g., BeagleBone, Raspberry Pi) to ensure high availability of worker processes.
 
-## ✨ Core Features
+## Core Features
 
-*   🔄 **Respawn Loop (`--restart`):** Automatically restarts child processes if they crash. Integrates a throttling mechanism (sleep) to prevent CPU-burning "crash-loops."
-*   ⏱️ **Timeout Enforcer (`--timeout`):** Immediately terminates the child process if it exceeds the specified execution time, preventing I/O deadlocks or infinite hangs.
-*   💣 **Process Group Kill (`-g`):** Prevents orphan and zombie processes. Spawns the child in a new Process Group and terminates the entire group (including grandchildren) with a single signal.
-*   📝 **Safe Log Capture (`-c`):** Automatically redirects the child's `stdout` and `stderr` into an anonymous pipe. The parent process safely reads and manages the logs without cluttering the terminal output.
-*   🧩 **Dynamic CLI Parsing:** Highly flexible command-line argument parsing. Flags can be placed in any order before the target command without confusing the supervisor with the child's own arguments.
+*   **Respawn Loop (`--restart`):** Automatically restarts child processes if they crash. Integrates a throttling mechanism (sleep) to prevent CPU-burning "crash-loops."
+*   ⏱**Timeout Enforcer (`--timeout`):** Immediately terminates the child process if it exceeds the specified execution time, preventing I/O deadlocks or infinite hangs.
+*   **Process Group Kill (`-g`):** Prevents orphan and zombie processes. Spawns the child in a new Process Group and terminates the entire group (including grandchildren) with a single signal.
+*   **Safe Log Capture (`-c`):** Automatically redirects the child's `stdout` and `stderr` into an anonymous pipe. The parent process safely reads and manages the logs without cluttering the terminal output.
+*   **Dynamic CLI Parsing:** Highly flexible command-line argument parsing. Flags can be placed in any order before the target command without confusing the supervisor with the child's own arguments.
 
 ---
 
-## 🧠 System Programming Architecture (Under the Hood)
+## System Programming Architecture (Under the Hood)
 
 This project orchestrates several low-level Linux Kernel APIs:
 
@@ -35,7 +35,7 @@ This project orchestrates several low-level Linux Kernel APIs:
 
 ---
 
-## 🚀 Usage Guide
+## Usage Guide
 
 ### 1. Build Compilation
 ```bash
@@ -73,7 +73,7 @@ Bash
 
 ./supervisor run --timeout 5 --restart 3 -g -c ./worker_script.sh arg1 arg2
 
-🛠️ Troubleshooting Common Errors
+Troubleshooting Common Errors
 
     [Worker] EXEC failed: Permission denied: Ensure that your target child executable (e.g., ./worker) has execution privileges granted (chmod +x worker).
 

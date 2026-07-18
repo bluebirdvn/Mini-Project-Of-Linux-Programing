@@ -8,10 +8,10 @@
 #include <errno.h>
 #include <sys/select.h>
 #include <stdbool.h>
-#include <fcntl.h> // Bắt buộc phải có thư viện này để dùng hàm open()
+#include <fcntl.h> 
 
 #define TIMEOUT "--timeout"
-#define RESTART "--restart" // FIX: Thêm -- cho khớp với lệnh gõ
+#define RESTART "--restart" 
 #define KILL_GROUP "-g"
 #define CAPTURE_OUT "-c"
 
