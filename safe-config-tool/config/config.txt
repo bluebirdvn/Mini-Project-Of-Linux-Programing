@@ -1,0 +1,7 @@
+#Config param for spi in rasp-pi-zero
+frequency=200000
+bit=8
+fullduplex=true
+cs1=PIN0
+cs2=PIN1
+
