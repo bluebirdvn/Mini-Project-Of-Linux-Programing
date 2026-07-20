@@ -1,6 +1,4 @@
 
-
-
 #include <stdio.h>
 #include <pthread.h>
 #include <signal.h>
@@ -13,6 +11,13 @@
 #include <errno.h>
 #include <sys/file.h>
 #include <stdbool.h>
+
+/*For inotyfy:>>*/
+
+#include <sys/inotify.h>
+
+
+#include "notify_sig.h"
 
 #define QUEUE_CAP 32
 #define MAX_WORKER 5
@@ -68,6 +73,87 @@ struct daemon_state {
     struct system_config config;
 };
 
+struct file_notify {
+    void* priv_data;
+    int inotify_fd;
+
+};
+
+
+
+void watch_handler(const char* path, uint32_t mask, void* priv_data)
+{
+
+    if (path == NULL || priv_data == NULL) {
+        perror("path and private data are NULL");
+        return;
+    }
+    struct daemon_state* state = (struct daemon_state*)priv_data;
+
+
+    const char* event_type = "";
+    if (mask & IN_MODIFY) {
+        event_type = "MODIFY";
+    } else if (mask & IN_CREATE) {
+        event_type = "CREATE";
+    } else if (mask & IN_DELETE) {
+        event_type = "DELETE";
+    } else if (mask & IN_MOVED_TO) {
+        event_type = "MOVE_TO";
+    } else if (mask & IN_MOVED_FROM) {
+        event_type = "MOVE_FROM";
+    }
+    
+    pthread_mutex_lock(&state->state_mutex);
+    if (state->shutting_down != 1) {
+        kill(getpid(), SIGHUP);
+    }
+    pthread_mutex_unlock(&state->state_mutex);
+
+    printf("%s: %s\n", event_type, path);
+    fflush(stdout);
+
+}
+
+void *inotify_handler(void* param)
+{
+    if (!param) {
+        perror("private data is nullptr");
+        return NULL;
+    }
+
+    struct file_notify* notify = (struct file_notify*)param;
+    struct daemon_state* state = (struct daemon_state*)(notify->priv_data);
+    char buffer_event[2048];
+
+    while(1) {
+        ssize_t len = read(notify->inotify_fd, buffer_event, sizeof(buffer_event));
+        if (len == -1) {
+            if (errno == EINTR) {
+                continue;
+            } else {
+                perror("read inotify failed.\n");
+                break;
+            }
+
+        }
+        for (char *ptr = buffer_event; ptr < buffer_event + len; ) {
+            struct inotify_event *event = (struct inotify_event*)(ptr);
+
+            if (event->len > 0) {
+                watch_handler(event->name, event->mask, state);
+
+
+            }
+            ptr += sizeof(struct inotify_event) + event->len;
+        }
+        fflush(stdout);
+    }
+
+    close(notify->inotify_fd);
+    
+    EXIT_SUCCESS;
+}    
 
 int convert_signal_to_string(int sig_num, char *str, work_type* type) {
     if (!str) {
@@ -493,7 +579,7 @@ int thread_create(pthread_t *thread, int num_workers, struct daemon_state *state
     }
 
     pthread_create(&thread[num_workers], NULL, sig_thread, (void*)state);
-
+  
     return 0;
 }
 
@@ -537,15 +623,32 @@ int main(int argc, char* argv[])
 
     printf("Daemon is starting with %d workers...\n", MAX_WORKER);
 
+    struct file_notify notify;
+    notify.priv_data = &state;
+    int  ret = watch_config_dir(state.path_config);
+    if (ret < 0) {
+        perror("watch dir config failed.\n");
+        return -1;
+    }
+
+    notify.inotify_fd = ret;
+
     if (thread_create(threads, MAX_WORKER, &state) != 0) {
         free_resource(&state);
         return -1;
     }
 
+
+
+    pthread_t inotify_thr;
+    pthread_create(&inotify_thr, NULL, inotify_handler, &notify);
+    
     if (die_thread(threads, MAX_WORKER) != 0) {
         free_resource(&state);
         return -1;
     }
+
+    pthread_join(inotify_thr, NULL);
 
     free_resource(&state);
 
