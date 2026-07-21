@@ -1,15 +1,18 @@
 CC = gcc
-CFLAGS = -Wall -Werror -O2 -Wextra
+CFLAGS = -Wall -Werror -O2 -Wextra -I./inc
 LDFLAGS = -pthread
 
-SRCS = main.c
-OBJS = $(SRCS:.c=.o)
-DEPS = $(SRCS:.c=.d)
+SRCS = main.c notify_sig.c 
+OBJS = $(addprefix $(BUILD_DIR)/, $(SRCS:.c=.o))
+DEPS = $(addprefix $(BUILD_DIR)/, $(SRCS:.c=.d))
 
 TARGET = signal-aware-multithreading-daemon
 BUILD_DIR = ./build
 RUN_DIR = ./run
-HEADERS =
+
+INC_DIR = ./inc
+
+VPATH = inc
 
 .PHONY: all clean run debug
 
@@ -21,15 +24,15 @@ $(BUILD_DIR):
 $(RUN_DIR):
 	mkdir -p $(RUN_DIR)
 
-$(BUILD_DIR)/%.o: %.c $(HEADERS)
+$(BUILD_DIR)/%.o: %.c
 	@echo "Compiling $<..."
 	$(CC) $(CFLAGS) -MMD -MP -c $< -o $@
 
-$(TARGET): $(addprefix $(BUILD_DIR)/, $(OBJS))
+$(TARGET): $(OBJS)
 	@echo "Linking $@..."
 	$(CC) $(CFLAGS) -o $@ $^ $(LDFLAGS)
 
--include $(addprefix $(BUILD_DIR)/, $(DEPS))
+-include $(DEPS)
 
 run: $(TARGET)
 	@echo "Running..."
