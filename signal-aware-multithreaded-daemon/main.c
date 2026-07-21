@@ -1,4 +1,6 @@
 
+
+#include <time.h>
 #include <stdio.h>
 #include <pthread.h>
 #include <signal.h>
@@ -12,10 +14,11 @@
 #include <sys/file.h>
 #include <stdbool.h>
 
+
 /*For inotyfy:>>*/
 
 #include <sys/inotify.h>
-
+#include <sys/select.h>
 
 #include "notify_sig.h"
 
@@ -76,7 +79,7 @@ struct daemon_state {
 struct file_notify {
     void* priv_data;
     int inotify_fd;
-
+    bool is_running;
 };
 
 
@@ -106,7 +109,14 @@ void watch_handler(const char* path, uint32_t mask, void* priv_data)
     
     pthread_mutex_lock(&state->state_mutex);
     if (state->shutting_down != 1) {
-        kill(getpid(), SIGHUP);
+        char *config_name = strrchr(state->path_config, '/');
+        if (config_name) config_name++;
+        else config_name = state->path_config;
+        
+        if (strcmp(path, config_name) == 0) {
+            printf("[NOTIFY] Config file changed, sending SIGHUP\n");
+            kill(getpid(), SIGHUP);
+        }
     }
     pthread_mutex_unlock(&state->state_mutex);
 
@@ -121,12 +131,46 @@ void *inotify_handler(void* param)
         perror("private data is nullptr");
         return NULL;
     }
-
+    
     struct file_notify* notify = (struct file_notify*)param;
     struct daemon_state* state = (struct daemon_state*)(notify->priv_data);
     char buffer_event[2048];
+    notify->is_running = true;
+    while(notify->is_running) {
 
-    while(1) {
+        fd_set fds;
+        FD_ZERO(&fds);
+
+        FD_SET(notify->inotify_fd, &fds);
+
+        struct timeval time;
+        time.tv_sec = 1;
+        time.tv_usec= 0;
+
+        int fd = select(notify->inotify_fd + 1, &fds, NULL, NULL, &time);
+
+        if (fd < 0) {
+            if (errno == EINTR) {
+                continue;
+                
+            } else {
+                perror("select\n");
+                break;
+            }
+        }
+
+        if (fd == 0) {
+            pthread_mutex_lock(&state->state_mutex);
+            if (state->shutting_down == 1) {
+                notify->is_running = false;
+                pthread_mutex_unlock(&state->state_mutex);
+                break;
+            }
+            pthread_mutex_unlock(&state->state_mutex);
+            continue;
+        }
+
+
         ssize_t len = read(notify->inotify_fd, buffer_event, sizeof(buffer_event));
         if (len == -1) {
             if (errno == EINTR) {
@@ -151,8 +195,7 @@ void *inotify_handler(void* param)
     }
 
     close(notify->inotify_fd);
-    
-    EXIT_SUCCESS;
+    return NULL;
 }    
 
 int convert_signal_to_string(int sig_num, char *str, work_type* type) {
@@ -597,10 +640,10 @@ int free_resource(struct daemon_state *state) {
     if (!state) {
         return -1;
     }
-    pthread_mutex_destroy(&state.state_mutex);
-    pthread_mutex_destroy(&state.daemon_data.mutex);
-    pthread_cond_destroy(&state.daemon_data.not_empty);
-    pthread_cond_destroy(&state.daemon_data.not_full);
+    pthread_mutex_destroy(&state->state_mutex);
+    pthread_mutex_destroy(&state->daemon_data.mutex);
+    pthread_cond_destroy(&state->daemon_data.not_empty);
+    pthread_cond_destroy(&state->daemon_data.not_full);
 
     return 0;
 }
@@ -615,7 +658,7 @@ int main(int argc, char* argv[])
         fprintf(stderr, "Failed to initialize daemon configuration.\n");
         return EXIT_FAILURE;
     }
-
+    
     char *config_file = (argc > 1) ? argv[1] : "./config/config.txt";
     set_path_config(&state, config_file);
 
@@ -625,7 +668,18 @@ int main(int argc, char* argv[])
 
     struct file_notify notify;
     notify.priv_data = &state;
-    int  ret = watch_config_dir(state.path_config);
+
+    char watch_dir[256];
+    char *last_slash = strrchr(state.path_config, '/');
+    if (last_slash) {
+        size_t len = last_slash - state.path_config;
+        strncpy(watch_dir, state.path_config, len);
+        watch_dir[len] = '\0';
+    } else {
+        strcpy(watch_dir, ".");
+    }
+
+    int  ret = watch_config_dir(watch_dir);
     if (ret < 0) {
         perror("watch dir config failed.\n");
         return -1;
@@ -648,10 +702,15 @@ int main(int argc, char* argv[])
         return -1;
     }
 
-    pthread_join(inotify_thr, NULL);
+    if (notify.inotify_fd >= 0) {
+        notify.is_running = false;
+        pthread_join(inotify_thr, NULL);
+        close(notify.inotify_fd);
+    }
 
     free_resource(&state);
 
     printf("Daemon shut down gracefully.\n");
     return EXIT_SUCCESS;
+
 }
