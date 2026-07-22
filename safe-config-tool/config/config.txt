@@ -4,4 +4,8 @@ bit=8
 fullduplex=true
 cs1=PIN0
 cs2=PIN1
-
+LOG_LEVEL=INFO
+DELAY=100
+delay=100ms
+log_level=warning
+sample_rate=warning
