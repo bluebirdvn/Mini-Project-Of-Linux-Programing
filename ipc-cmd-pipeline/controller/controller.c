@@ -1,6 +1,6 @@
-#include <asm-generic/errno-base.h>
-#include <bits/pthreadtypes.h>
-#include <bits/types/error_t.h>
+
+#include <bits/time.h>
+#include <time.h>
 #include <errno.h>
 #include <fcntl.h>
 #include <pthread.h>
@@ -32,7 +32,7 @@ struct thread_data {
 
     int send_fd, recv_fd;
     bool is_running;
-
+    bool ack_received;
     pthread_mutex_t mutex;
 };
 
@@ -41,7 +41,7 @@ struct ack_data {
     bool ack;
 };
 
-typedef enum command {
+enum command {
     PING = 0,
     GET_DATA,
     SEND_CMD,
@@ -49,6 +49,7 @@ typedef enum command {
     CHECK_STATUS,
     NONE
 };
+
 struct packet {
     int num_pkt;
     enum command cmd;
@@ -127,7 +128,7 @@ void convert_to_packet(enum command a, struct packet *pkt) {
 
 void sleep_random(void)
 {
-    int a = rand() % 10;
+    int a = rand() % 3;
     printf("sleep for %d seconds....\n", a);
     sleep(a);
 }
@@ -166,17 +167,17 @@ void *recv_ack_thread(void *arg)
 
                 pthread_cond_signal(&status->is_ack);
         } else {
-            int last_send;
 
             pthread_mutex_lock(&status->mutex);
-            last_send = status->last_send;
             status->ack_send = ack.num_pkt;
+            status->ack_received = true;    
             pthread_mutex_unlock(&status->mutex);
 
             pthread_cond_signal(&status->is_ack);
         }
 
     }
+    return NULL;
  
 }
 
@@ -207,42 +208,58 @@ void *send_cmd(void* arg)
         pkt.num_pkt = status->last_send;
         pthread_mutex_unlock(&status->mutex);
 
-        struct timespec time;
-        time.tv_sec = TIMEOUT;
-        time.tv_nsec = 0;
-
         while (try_resend < RESEND_NUM && is_running) {
+
             int ret = write(status->send_fd, &pkt, sizeof(struct packet));
             try_resend++;
             if (ret < 0) {
                 perror("send data failed\n");
             }
+            printf("[controller] sent data.\n");
 
-            if (pthread_cond_timedwait(&status->is_ack, &status->mutex, &time) != 0 && is_running) {
-                printf("timeout for ack.\nRESEND.\n");
-                continue;
-            } else {
-                pthread_mutex_lock(&status->mutex);
-                if (status->last_send != status->ack_send) {
-                    pthread_mutex_unlock(&status->mutex);
-                    printf("ACK is not for this packet.\nRESEND");
-                    continue;
-                } else {
-                    pthread_mutex_unlock(&status->mutex);
-                    printf("GET ACK.\n");
-                    break;
+            struct timespec time;
+            time.tv_sec = TIMEOUT;
+            time.tv_nsec = 0;
 
-                }
+            clock_gettime(CLOCK_REALTIME, &time);
+            time.tv_sec += TIMEOUT;
+
+            pthread_mutex_lock(&status->mutex);
+            int wait_ret = 0;
+
+            while( !status->ack_received && status->is_running && wait_ret == 0) {
+                pthread_cond_timedwait(&status->is_ack, &status->mutex, &time);
+
             }
 
-            pthread_mutex_lock(&status->mutex);
-            is_running = status->is_running;
-            pthread_mutex_lock(&status->mutex);
+            if (wait_ret) {
+                pthread_mutex_lock(&status->mutex);
+                printf("[controller] Timeout for ack.\n");
+                printf("[controller] RESEND;.\n");
+                continue;
+            }
 
+            if (status->last_send != status->ack_send) {
+                status->ack_received = false;
+                pthread_mutex_unlock(&status->mutex);
+                printf("[controller] ack not true for this packet\n");
+                printf("[controller] RESEND\n");
+                continue;
+            }
 
+            status->ack_received = false;
+            pthread_mutex_unlock(&status->mutex);
+            printf("[controller] get ack.\n");
+
+            fflush(stdout);
+
+            break;
         }
 
-
+        
+        pthread_mutex_lock(&status->mutex);
+        is_running = status->is_running;
+        pthread_mutex_unlock(&status->mutex);
         sleep_random();
     }
     
@@ -251,12 +268,14 @@ void *send_cmd(void* arg)
 
 int main(int argc, char* argv[])
 {
-
-    int send_fd = open(PATH_CMD_FIFO, O_WRONLY | O_CLOEXEC);
+    (void)argc;
+    (void)argv;
+    printf("controller running\n");
+    int send_fd = open(PATH_CMD_FIFO, O_RDWR | O_CLOEXEC);
     if (send_fd < 0) {
         perror("Open fifo failed.\n");
     }
-    int recv_fd = open(PATH_CMD_ACK, O_RDONLY | O_CLOEXEC);
+    int recv_fd = open(PATH_CMD_ACK, O_RDWR | O_CLOEXEC);
     if (recv_fd < 0) {
         perror("Open fifo failed.\n");
     }    
@@ -271,7 +290,7 @@ int main(int argc, char* argv[])
     pthread_t send_cmd_thread, recv_ack;
     pthread_create(&send_cmd_thread, NULL, send_cmd, &thread_data);
     pthread_create(&recv_ack, NULL, recv_ack_thread, &thread_data);
-
+    printf("thread running\n");
     while (thread_data.is_running) {
         sleep(TIMEOUT);
     }
