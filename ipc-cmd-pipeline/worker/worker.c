@@ -33,7 +33,7 @@ struct ack_data {
     bool ack;
 };
 
-typedef enum command {
+enum command {
     PING = 0,
     GET_DATA,
     SEND_CMD,
@@ -53,6 +53,7 @@ struct thread_data {
     pthread_cond_t has_data;
     int send_fd, recv_fd, send_log_fd;
     bool is_running;
+    bool has_new_data;
     struct packet data;
     pthread_mutex_t mutex;
 };
@@ -170,60 +171,56 @@ void *worker_thread(void *arg)
         return NULL;
     }
 
-    bool is_running = true;
-    while(is_running) {
+    while(1) {
         pthread_mutex_lock(&status->mutex);
-        if (pthread_cond_wait(&status->has_data, &status->mutex) != 0 && is_running) {
-            perror("Wait error");
-            if (is_running != 1) {
-                pthread_mutex_unlock(&status->mutex);
-                break;
-            } 
-            if (errno == EBUSY) {
-                printf("another thread is waitting .\n");
-                pthread_mutex_unlock(&status->mutex);
+        while (!status->has_new_data && status->is_running) {
+            pthread_cond_wait(&status->has_data, &status->mutex);
+        }
 
-                continue;
-            }
-        } else {
-            struct packet pkt = status->data;
+        if (!status->is_running && !status->has_new_data) {
             pthread_mutex_unlock(&status->mutex);
+            break;
+        }
 
-            switch ((int)pkt.cmd) {
-                case 0: {
-                    ping_task(&pkt, status->send_log_fd);
-                    
-                    break;
-                }
-                case 1: {
-                    get_data_task(&pkt, status->send_log_fd);
-                    
-                    break;
-                }
-                case 2: {
-                    send_cmd_task(&pkt, status->send_log_fd);
-                    
-                    break;
-                }
-                case 3: {
-                    check_sec_task(&pkt, status->send_log_fd);
+        struct packet pkt = status->data;
+        status->has_new_data = false;
+        pthread_mutex_unlock(&status->mutex);
+
+
+        printf("[worker] task execute.\n");
+        switch ((int)pkt.cmd) {
+            case 0: {
+                ping_task(&pkt, status->send_log_fd);
                 
-                    break;
-                }
-                case 4: {
-                    check_status_task(&pkt, status->send_log_fd);
-                    
-                    break;
-                }
-                default: {
-                    printf("not a situation.\n");
-                    break;
-                }
+                break;
+            }
+            case 1: {
+                get_data_task(&pkt, status->send_log_fd);
+                
+                break;
+            }
+            case 2: {
+                send_cmd_task(&pkt, status->send_log_fd);
+                
+                break;
+            }
+            case 3: {
+                check_sec_task(&pkt, status->send_log_fd);
+            
+                break;
+            }
+            case 4: {
+                check_status_task(&pkt, status->send_log_fd);
+                
+                break;
+            }
+            default: {
+                printf("not a situation.\n");
+                break;
+            }
                    
             }
-        }
-        
-
+            fflush(stdout);
     }
     
     return NULL;
@@ -265,7 +262,7 @@ void *recv_data_thread(void *arg)
 
             pthread_cond_signal(&status->has_data);
         } else {
-            printf("GET data from fifo command.\n");
+            printf("[worker] get data from fifo command.\n");
             struct ack_data ack;
             ack.num_pkt = pkt.num_pkt;
             ack.ack = true;
@@ -282,34 +279,37 @@ void *recv_data_thread(void *arg)
                 perror("end of write.\n");
                 continue;
             } else {
-                printf("Send ack successfull.\n");
+                printf("[worker] Send ack successfull.\n");
                 pthread_mutex_lock(&status->mutex);
                 status->data = pkt;
+                status->has_new_data = true;
                 pthread_mutex_unlock(&status->mutex);
 
                 pthread_cond_signal(&status->has_data);
             }
         }
+        fflush(stdout);
 
     }
- 
+    return NULL;
 }
 
 
 
 int main(int argc, char* argv[])
 {
+    (void)argc;
+    (void)argv;
 
-
-    int send_ack = open(PATH_CMD_ACK, O_WRONLY | O_CLOEXEC);
+    int send_ack = open(PATH_CMD_ACK, O_RDWR | O_CLOEXEC);
     if (send_ack < 0) {
         perror("Open fifo failed.\n");
     }
-    int recv_fd = open(PATH_CMD_FIFO, O_RDONLY | O_CLOEXEC);
+    int recv_fd = open(PATH_CMD_FIFO, O_RDWR | O_CLOEXEC);
     if (recv_fd < 0) {
         perror("Open fifo failed.\n");
     }    
-    int send_log_fd = open(PATH_LOG_FIFO, O_WRONLY | O_CLOEXEC);
+    int send_log_fd = open(PATH_LOG_FIFO, O_RDWR | O_CLOEXEC);
     if (recv_fd < 0) {
         perror("Open fifo failed.\n");
     }      
