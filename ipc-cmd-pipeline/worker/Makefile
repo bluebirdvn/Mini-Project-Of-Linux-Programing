@@ -5,7 +5,7 @@ LDFLAGS = -pthread
 
 
 TARGET = worker
-SRCS = woker.c
+SRCS = worker.c
 OBJS = $(SRCS:.c=.o)
 
 
