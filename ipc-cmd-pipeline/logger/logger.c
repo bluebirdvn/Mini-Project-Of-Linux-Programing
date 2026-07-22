@@ -22,8 +22,9 @@
 
 int main(int argc, char* argv[])
 {
-
-    int recv_fd = open(PATH_LOG_FIFO, O_RDONLY | O_CLOEXEC);
+    (void)argc;
+    (void)argv;
+    int recv_fd = open(PATH_LOG_FIFO, O_RDWR | O_CLOEXEC);
     if (recv_fd < 0) {
         perror("Open fifo failed.\n");
     }    
@@ -46,7 +47,7 @@ int main(int argc, char* argv[])
             is_running = false;
         } else {
             buf[ret] = '\0';
-            printf("Log: %s\n", buf);
+            printf("[logger]: %s\n", buf);
         }
     }
 

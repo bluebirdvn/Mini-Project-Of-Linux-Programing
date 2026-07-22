@@ -94,7 +94,13 @@ int main(int argc, char* argv[])
         exit(EXIT_FAILURE);
     } else if (ctrl < 0) {
         perror("fork() for ctrl failed.\n");
-    } 
+    } else {
+        FILE *f = fopen("controller.pid", "w");
+        if (f) { 
+            fprintf(f, "%d\n", ctrl); 
+            fclose(f);
+        }
+    }
 
     log = fork();
     if (log == 0) {
@@ -103,9 +109,15 @@ int main(int argc, char* argv[])
 
         perror("Run log process failed.\n");
         exit(EXIT_FAILURE);
-    } else if (ctrl < 0) {
+    } else if (log < 0) {
         perror("fork() for log failed.\n");
-    } 
+    } else {
+        FILE *f = fopen("logger.pid", "w");
+        if (f) { 
+            fprintf(f, "%d\n", log); 
+            fclose(f);
+        }
+    }
 
     work = fork();
     if (work == 0) {
@@ -114,9 +126,15 @@ int main(int argc, char* argv[])
 
         perror("Run work process failed.\n");
         exit(EXIT_FAILURE);
-    } else if (ctrl < 0) {
+    } else if (work < 0) {
         perror("fork() for work failed.\n");
-    } 
+    } else {
+        FILE *f = fopen("worker.pid", "w");
+        if (f) { 
+            fprintf(f, "%d\n", work); 
+            fclose(f);
+        }
+    }
 
     int status, finish;
 
