@@ -1,0 +1,1045 @@
+[2026-08-09 14:43:59] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 14:43:59] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 14:43:59] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 14:43:59] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:43:59] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:43:59] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 14:43:59] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 14:43:59] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:43:59] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:00] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 14:44:00] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:00] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:00] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:00] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:01] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 14:44:01] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:01] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:02] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 14:44:02] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:02] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:02] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:02] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:02] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:02] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:03] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 14:44:03] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:03] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:04] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-09 14:44:04] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:04] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:05] [INFO ] [client.h:169 -> create_mesage_random()] build message number 11 success.
+[2026-08-09 14:44:05] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:05] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:05] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:05] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIG OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:05] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: ACKFIG OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:05] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:05] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:05] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:06] [INFO ] [client.h:169 -> create_mesage_random()] build message number 15 success.
+[2026-08-09 14:44:06] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:06] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:06] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: DATAIG OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:06] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 17 success.
+[2026-08-09 14:44:07] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:07] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:07] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIG OKt_id=1 reconnect=1
+
+[2026-08-09 14:44:07] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 19 success.
+[2026-08-09 14:44:08] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 14:44:08] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 14:44:09] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 14:44:17] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 14:44:17] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 14:44:17] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 14:44:17] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:10] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:05:10] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:05:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:05:10] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:10] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:10] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 15:05:10] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 15:05:10] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:10] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:11] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:05:11] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:11] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:11] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:05:11] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:12] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:05:12] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:12] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:13] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:05:18] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:05:18] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:05:18] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:05:18] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:18] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:27] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:05:34] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:05:34] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:05:34] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:05:34] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:34] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:34] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 15:05:34] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 15:05:34] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:34] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:35] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:05:35] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:35] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:35] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:05:35] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:36] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:05:36] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:36] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:37] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 15:05:37] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:37] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:05:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:37] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:05:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:38] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 15:05:38] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:38] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:39] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:05:53] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:05:53] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:05:53] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:05:53] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:05:53] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:05:55] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:21:55] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:21:55] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:21:55] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:21:55] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:21:55] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:21:55] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 15:21:55] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:21:55] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 15:21:55] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:21:56] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:21:56] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:21:56] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:21:56] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:21:56] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:21:57] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:21:57] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:21:57] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:21:58] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:22:01] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:22:01] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:22:01] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:22:01] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:22:01] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:32] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:34:37] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:34:37] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:34:37] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:34:37] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:34:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:37] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 15:34:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:37] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 15:34:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:38] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:34:38] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:34:38] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:38] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:34:38] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:39] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:34:39] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:34:39] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:34:40] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:34:42] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:34:42] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:34:42] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:34:42] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:34:42] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:21] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:36:21] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:36:21] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:36:21] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:36:21] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:21] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 15:36:21] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 15:36:21] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:21] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:22] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:36:22] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:36:22] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:22] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:36:22] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:23] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:36:23] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:36:23] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:24] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 15:36:24] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:36:24] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:24] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:36:24] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:24] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 6, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:36:24] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:25] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 15:36:25] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:36:25] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:26] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-09 15:36:26] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:36:26] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:36:26] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:36:29] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:36:29] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:36:29] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:36:29] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:45:57] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:45:57] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:45:57] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:45:57] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:45:57] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:45:57] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 15:45:57] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:45:57] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 15:45:57] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:45:58] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:45:58] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:45:58] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:45:59] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-09 15:45:59] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:45:59] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:45:59] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:45:59] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:45:59] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:45:59] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:00] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-09 15:46:00] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:00] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:00] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-09 15:46:00] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:01] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:46:15] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:46:15] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:46:15] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:46:15] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:15] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:15] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG
+
+[2026-08-09 15:46:15] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:15] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: RESUMED client_id=1 reconnect=2
+
+[2026-08-09 15:46:15] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:16] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:46:16] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:16] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:17] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-09 15:46:17] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:17] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:17] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:17] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKlient_id=1 reconnect=2
+
+[2026-08-09 15:46:17] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKlient_id=1 reconnect=2
+
+[2026-08-09 15:46:17] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:18] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-09 15:46:18] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:18] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:18] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKlient_id=1 reconnect=2
+
+[2026-08-09 15:46:18] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:19] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 15:46:19] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:19] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:19] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKAUS OKlient_id=1 reconnect=2
+
+[2026-08-09 15:46:19] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:20] [INFO ] [client.h:169 -> create_mesage_random()] build message number 11 success.
+[2026-08-09 15:46:20] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:20] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:21] [INFO ] [client.h:169 -> create_mesage_random()] build message number 12 success.
+[2026-08-09 15:46:21] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:21] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:21] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG OKlient_id=1 reconnect=2
+
+[2026-08-09 15:46:21] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:21] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKFIG OKlient_id=1 reconnect=2
+
+[2026-08-09 15:46:21] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:21] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:46:23] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:46:23] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:46:23] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:46:23] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:23] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:23] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: RESUMED client_id=1 reconnect=3
+
+[2026-08-09 15:46:23] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGD client_id=1 reconnect=3
+
+[2026-08-09 15:46:23] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:23] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:24] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:46:24] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:24] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:24] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:24] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKlient_id=1 reconnect=3
+
+[2026-08-09 15:46:25] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:46:25] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:25] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:26] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 15:46:26] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:26] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:26] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKlient_id=1 reconnect=3
+
+[2026-08-09 15:46:26] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:26] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKAUS OKlient_id=1 reconnect=3
+
+[2026-08-09 15:46:26] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:27] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 15:46:27] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:27] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:27] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:46:28] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:46:28] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:46:28] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:46:28] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:28] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: RESUMED client_id=1 reconnect=4
+
+[2026-08-09 15:46:28] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:28] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:29] [INFO ] [client.h:169 -> create_mesage_random()] build message number 2 success.
+[2026-08-09 15:46:29] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:29] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:29] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGD client_id=1 reconnect=4
+
+[2026-08-09 15:46:29] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKlient_id=1 reconnect=4
+
+[2026-08-09 15:46:29] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:29] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:30] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:46:35] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:46:35] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:46:35] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:46:35] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:35] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:35] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG
+
+[2026-08-09 15:46:35] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:35] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: RESUMED client_id=1 reconnect=5
+
+[2026-08-09 15:46:35] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:36] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:46:36] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:36] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:36] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:36] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKlient_id=1 reconnect=5
+
+[2026-08-09 15:46:37] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:46:37] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:37] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKlient_id=1 reconnect=5
+
+[2026-08-09 15:46:37] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:37] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 15:46:42] [INFO ] [client.c:52 -> init_client()] Connected to server successfully!
+
+[2026-08-09 15:46:42] [INFO ] [client.c:67 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 15:46:42] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 15:46:42] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:42] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:42] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG
+
+[2026-08-09 15:46:42] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:42] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: RESUMED client_id=1 reconnect=6
+
+[2026-08-09 15:46:42] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:43] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 15:46:43] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:43] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:43] [INFO ] [client.c:337 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKlient_id=1 reconnect=6
+
+[2026-08-09 15:46:43] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:44] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 15:46:44] [INFO ] [client.c:371 -> task_create_thread()] send message to queue
+[2026-08-09 15:46:44] [INFO ] [client.c:297 -> send_thread()] send successfully
+[2026-08-09 15:46:48] [INFO ] [client.c:104 -> main()] Shutting down client...
+
+[2026-08-09 16:32:07] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:32:07] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:32:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:32:07] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:32:07] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:07] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:32:07] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:32:07] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:07] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:32:08] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:32:08] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:08] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:32:08] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:09] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:32:09] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:32:09] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 16:32:10] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:32:10] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:10] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:32:10] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:32:10] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:32:10] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:33:36] [ERROR] [client.c:49 -> init_client()] Failed to connect to server
+[2026-08-09 16:33:43] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:33:43] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:33:43] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:33:43] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:33:43] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:33:43] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:33:43] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:33:43] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:33:43] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:33:44] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:33:44] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:33:44] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:33:44] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:33:44] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:08] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:35:08] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:35:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:35:08] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:08] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:08] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:35:08] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:35:08] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:08] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:09] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:35:09] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:09] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:09] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:35:09] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:35:10] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:10] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:10] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:35:10] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:22] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:35:22] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:35:22] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:35:22] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:22] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:22] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG
+
+[2026-08-09 16:35:22] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: RESUMED client_id=1 reconnect=2
+
+[2026-08-09 16:35:22] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:22] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:23] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:35:23] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:23] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:23] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKlient_id=1 reconnect=2
+
+[2026-08-09 16:35:23] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:24] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:35:24] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:24] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:25] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 16:35:25] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:25] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:25] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKlient_id=1 reconnect=2
+
+[2026-08-09 16:35:25] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:25] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKlient_id=1 reconnect=2
+
+[2026-08-09 16:35:25] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:26] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 16:35:26] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:26] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:35:27] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-09 16:35:27] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:35:27] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:45:26] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:45:26] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:46:05] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:46:05] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:46:05] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:46:05] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:46:05] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:46:05] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:46:05] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:46:05] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:46:05] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:46:06] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:46:06] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:46:06] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:46:06] [INFO ] [client.c:357 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:46:06] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:46:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:46:07] [INFO ] [client.c:391 -> task_create_thread()] send message to queue
+[2026-08-09 16:46:07] [INFO ] [client.c:317 -> send_thread()] send successfully
+[2026-08-09 16:48:07] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:48:07] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:48:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:48:07] [INFO ] [client.c:396 -> task_create_thread()] send message to queue
+[2026-08-09 16:48:07] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:48:07] [INFO ] [client.c:362 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:48:07] [INFO ] [client.c:362 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:48:07] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:48:07] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:48:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:48:08] [INFO ] [client.c:396 -> task_create_thread()] send message to queue
+[2026-08-09 16:48:08] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:48:08] [INFO ] [client.c:362 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:48:08] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:48:09] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:48:09] [INFO ] [client.c:396 -> task_create_thread()] send message to queue
+[2026-08-09 16:48:09] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:48:09] [INFO ] [client.c:362 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:48:09] [INFO ] [client.c:322 -> send_thread()] send successfully
+[2026-08-09 16:49:21] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:49:21] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:49:21] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:49:21] [INFO ] [client.c:399 -> task_create_thread()] send message to queue
+[2026-08-09 16:49:21] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:49:21] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:49:21] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:49:21] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:49:21] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:49:22] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:49:22] [INFO ] [client.c:399 -> task_create_thread()] send message to queue
+[2026-08-09 16:49:22] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:49:22] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:49:22] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:12] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:50:12] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:50:12] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:50:12] [INFO ] [client.c:399 -> task_create_thread()] send message to queue
+[2026-08-09 16:50:12] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:12] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:50:12] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:12] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:50:12] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:13] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:50:13] [INFO ] [client.c:399 -> task_create_thread()] send message to queue
+[2026-08-09 16:50:13] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:13] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:13] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:50:14] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:50:14] [INFO ] [client.c:399 -> task_create_thread()] send message to queue
+[2026-08-09 16:50:14] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:50:14] [INFO ] [client.c:365 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKTUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:50:14] [INFO ] [client.c:325 -> send_thread()] send successfully
+[2026-08-09 16:51:30] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 16:51:30] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 16:51:30] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 16:51:30] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 16:51:30] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 16:51:30] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 16:51:30] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 16:51:30] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 16:51:30] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 16:51:31] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 16:51:31] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 16:51:31] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 16:51:31] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 16:51:31] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 16:51:32] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 16:51:32] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 16:51:32] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 16:51:33] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-09 17:13:06] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 17:13:06] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 17:13:06] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 17:13:06] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:06] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 1 success.
+[2026-08-09 17:13:07] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:07] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 2 success.
+[2026-08-09 17:13:08] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:08] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:09] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 17:13:09] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:09] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-09 17:13:10] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:10] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:11] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 17:13:11] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:11] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:12] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 17:13:12] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:12] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:13] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-09 17:13:13] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:13] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:14] [INFO ] [client.h:169 -> create_mesage_random()] build message number 8 success.
+[2026-08-09 17:13:14] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:13:14] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:13:15] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-09 17:31:41] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 17:31:41] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 17:31:41] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 17:31:41] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:41] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:42] [INFO ] [client.h:169 -> create_mesage_random()] build message number 1 success.
+[2026-08-09 17:31:42] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:42] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:43] [INFO ] [client.h:169 -> create_mesage_random()] build message number 2 success.
+[2026-08-09 17:31:43] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:43] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:44] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 17:31:44] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:44] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:45] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-09 17:31:45] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:45] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:46] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 17:31:46] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:46] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:47] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 17:31:47] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:47] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:48] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-09 17:31:48] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:48] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:49] [INFO ] [client.h:169 -> create_mesage_random()] build message number 8 success.
+[2026-08-09 17:31:49] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 17:31:49] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 17:31:50] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-09 18:06:02] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-09 18:06:02] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-09 18:06:02] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-09 18:06:02] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:02] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-09 18:06:02] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:02] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-09 18:06:02] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:02] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:03] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-09 18:06:03] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:03] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:03] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-09 18:06:03] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:04] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-09 18:06:04] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:04] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:05] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-09 18:06:05] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:05] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:05] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-09 18:06:05] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:05] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-09 18:06:05] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:06] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-09 18:06:06] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:06] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-09 18:06:07] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:07] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 11 success.
+[2026-08-09 18:06:08] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-09 18:06:08] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:08] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG OKt_id=1 reconnect=1
+
+[2026-08-09 18:06:08] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKFIG OKt_id=1 reconnect=1
+
+[2026-08-09 18:06:08] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:08] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKFIG OKt_id=1 reconnect=1
+
+[2026-08-09 18:06:08] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:08] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-09 18:06:09] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-10 14:35:10] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-10 14:35:10] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-10 14:35:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-10 14:35:10] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:10] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: NEW client_id=1 reconnect=1
+
+[2026-08-10 14:35:10] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:10] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIGient_id=1 reconnect=1
+
+[2026-08-10 14:35:10] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:10] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:11] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-10 14:35:11] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:11] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:11] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: STATUS OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:11] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:12] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-10 14:35:12] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:12] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:13] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-10 14:35:13] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:13] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:13] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAUS OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:13] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:13] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKAUS OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:13] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:14] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-10 14:35:14] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:14] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:15] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-10 14:35:15] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:15] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:16] [INFO ] [client.h:169 -> create_mesage_random()] build message number 11 success.
+[2026-08-10 14:35:16] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:16] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:16] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: CONFIG OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:16] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKFIG OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:16] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:16] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: ACKFIG OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:16] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:16] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:17] [INFO ] [client.h:169 -> create_mesage_random()] build message number 15 success.
+[2026-08-10 14:35:17] [INFO ] [client.c:390 -> task_create_thread()] send message to queue
+[2026-08-10 14:35:17] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:17] [INFO ] [client.c:356 -> worker_thread()] [Worker] Received message from server - CMD: 7, Payload: DATAIG OKt_id=1 reconnect=1
+
+[2026-08-10 14:35:17] [INFO ] [client.c:319 -> send_thread()] send successfully
+[2026-08-10 14:35:17] [INFO ] [client.c:255 -> recv_thread()] server requested graceful shutdown
+[2026-08-10 14:35:21] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-10 15:10:57] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-10 15:10:57] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-10 15:10:57] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-10 15:10:57] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:10:57] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 0
+[2026-08-10 15:10:57] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:10:57] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 0
+[2026-08-10 15:10:58] [INFO ] [client.h:169 -> create_mesage_random()] build message number 1 success.
+[2026-08-10 15:10:58] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:10:58] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:10:58] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 1
+[2026-08-10 15:10:59] [INFO ] [client.h:169 -> create_mesage_random()] build message number 2 success.
+[2026-08-10 15:10:59] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:10:59] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:00] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-10 15:11:00] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:00] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:00] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 2
+[2026-08-10 15:11:00] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 3
+[2026-08-10 15:11:01] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-10 15:11:01] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:01] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:01] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 4
+[2026-08-10 15:11:02] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-10 15:11:02] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:02] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:03] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-10 15:11:03] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:03] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:03] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 6
+[2026-08-10 15:11:04] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-10 15:11:04] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:04] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:04] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 7
+[2026-08-10 15:11:04] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 5
+[2026-08-10 15:11:05] [INFO ] [client.h:169 -> create_mesage_random()] build message number 8 success.
+[2026-08-10 15:11:05] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:05] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:05] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 8
+[2026-08-10 15:11:06] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-10 15:11:06] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:06] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-10 15:11:07] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:07] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 11 success.
+[2026-08-10 15:11:08] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:08] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:08] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 9
+[2026-08-10 15:11:08] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 10
+[2026-08-10 15:11:08] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 11
+[2026-08-10 15:11:09] [INFO ] [client.h:169 -> create_mesage_random()] build message number 12 success.
+[2026-08-10 15:11:09] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:09] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:09] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 12
+[2026-08-10 15:11:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 13 success.
+[2026-08-10 15:11:10] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:10] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:10] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 13
+[2026-08-10 15:11:11] [INFO ] [client.h:169 -> create_mesage_random()] build message number 14 success.
+[2026-08-10 15:11:11] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:11:11] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:11:11] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 14
+[2026-08-10 15:11:12] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-10 15:17:53] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-10 15:17:53] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-10 15:17:53] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-10 15:17:53] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:53] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 0
+[2026-08-10 15:17:53] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:17:54] [INFO ] [client.h:169 -> create_mesage_random()] build message number 1 success.
+[2026-08-10 15:17:54] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:54] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:17:54] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 0
+[2026-08-10 15:17:54] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 1
+[2026-08-10 15:17:55] [INFO ] [client.h:169 -> create_mesage_random()] build message number 2 success.
+[2026-08-10 15:17:55] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:55] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:17:56] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-10 15:17:56] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:56] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:17:57] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-10 15:17:57] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:57] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:17:57] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 2
+[2026-08-10 15:17:57] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 3
+[2026-08-10 15:17:57] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 4
+[2026-08-10 15:17:58] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-10 15:17:58] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:58] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:17:59] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-10 15:17:59] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:17:59] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:00] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-10 15:18:00] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:00] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:00] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 6
+[2026-08-10 15:18:00] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 5
+[2026-08-10 15:18:00] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 7
+[2026-08-10 15:18:01] [INFO ] [client.h:169 -> create_mesage_random()] build message number 8 success.
+[2026-08-10 15:18:01] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:01] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:02] [INFO ] [client.h:169 -> create_mesage_random()] build message number 9 success.
+[2026-08-10 15:18:02] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:02] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:02] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 8
+[2026-08-10 15:18:03] [INFO ] [client.h:169 -> create_mesage_random()] build message number 10 success.
+[2026-08-10 15:18:03] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:03] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:04] [INFO ] [client.h:169 -> create_mesage_random()] build message number 11 success.
+[2026-08-10 15:18:04] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:04] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:04] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 9
+[2026-08-10 15:18:04] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 10
+[2026-08-10 15:18:05] [INFO ] [client.h:169 -> create_mesage_random()] build message number 12 success.
+[2026-08-10 15:18:05] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:05] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:06] [INFO ] [client.h:169 -> create_mesage_random()] build message number 13 success.
+[2026-08-10 15:18:06] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:06] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:06] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 11
+[2026-08-10 15:18:06] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 12
+[2026-08-10 15:18:07] [INFO ] [client.h:169 -> create_mesage_random()] build message number 14 success.
+[2026-08-10 15:18:07] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:07] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:07] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 13
+[2026-08-10 15:18:07] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 14
+[2026-08-10 15:18:08] [INFO ] [client.h:169 -> create_mesage_random()] build message number 15 success.
+[2026-08-10 15:18:08] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:08] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:09] [INFO ] [client.h:169 -> create_mesage_random()] build message number 16 success.
+[2026-08-10 15:18:09] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:09] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:10] [INFO ] [client.h:169 -> create_mesage_random()] build message number 17 success.
+[2026-08-10 15:18:10] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:10] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:10] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 16
+[2026-08-10 15:18:10] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 15
+[2026-08-10 15:18:11] [INFO ] [client.h:169 -> create_mesage_random()] build message number 18 success.
+[2026-08-10 15:18:11] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:18:11] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:18:12] [INFO ] [client.c:110 -> main()] Shutting down client...
+
+[2026-08-10 15:44:19] [INFO ] [client.c:53 -> init_client()] Connected to server successfully!
+
+[2026-08-10 15:44:19] [INFO ] [client.c:68 -> init_client()] Initial token sent successfully.
+
+[2026-08-10 15:44:19] [INFO ] [client.h:169 -> create_mesage_random()] build message number 0 success.
+[2026-08-10 15:44:19] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:19] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:19] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 0
+[2026-08-10 15:44:20] [INFO ] [client.h:169 -> create_mesage_random()] build message number 1 success.
+[2026-08-10 15:44:20] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:20] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:20] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 0
+[2026-08-10 15:44:20] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 1
+[2026-08-10 15:44:21] [INFO ] [client.h:169 -> create_mesage_random()] build message number 2 success.
+[2026-08-10 15:44:21] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:21] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:22] [INFO ] [client.h:169 -> create_mesage_random()] build message number 3 success.
+[2026-08-10 15:44:22] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:22] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:23] [INFO ] [client.h:169 -> create_mesage_random()] build message number 4 success.
+[2026-08-10 15:44:23] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:23] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:23] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 2
+[2026-08-10 15:44:23] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 3
+[2026-08-10 15:44:23] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 4
+[2026-08-10 15:44:24] [INFO ] [client.h:169 -> create_mesage_random()] build message number 5 success.
+[2026-08-10 15:44:24] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:24] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:25] [INFO ] [client.h:169 -> create_mesage_random()] build message number 6 success.
+[2026-08-10 15:44:25] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:25] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:26] [INFO ] [client.h:169 -> create_mesage_random()] build message number 7 success.
+[2026-08-10 15:44:26] [INFO ] [client.c:398 -> task_create_thread()] send message to queue
+[2026-08-10 15:44:26] [INFO ] [client.c:328 -> send_thread()] send successfully
+[2026-08-10 15:44:26] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 6
+[2026-08-10 15:44:26] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 5
+[2026-08-10 15:44:26] [INFO ] [client.c:264 -> recv_thread()] server ack for packet number 7
+[2026-08-10 15:44:27] [INFO ] [client.c:110 -> main()] Shutting down client...
+

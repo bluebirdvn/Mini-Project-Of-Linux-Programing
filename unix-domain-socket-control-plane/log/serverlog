@@ -1,0 +1,371 @@
+[2026-08-09 14:43:55] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 14:43:59] [INFO ] [server.h:507 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 14:43:59] [INFO ] [server.h:888 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 14:43:59] [DEBUG] [server.h:941 -> process_task()] processed cmd=8 packet=0 from client_id=1
+[2026-08-09 14:43:59] [DEBUG] [server.h:941 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 14:43:59] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 14:43:59] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 14:44:00] [DEBUG] [server.h:941 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 14:44:00] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=3 from client_id=1
+[2026-08-09 14:44:02] [DEBUG] [server.h:941 -> process_task()] processed cmd=2 packet=6 from client_id=1
+[2026-08-09 14:44:02] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=6 from client_id=1
+[2026-08-09 14:44:02] [DEBUG] [server.h:941 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 14:44:02] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=5 from client_id=1
+[2026-08-09 14:44:05] [DEBUG] [server.h:941 -> process_task()] processed cmd=4 packet=9 from client_id=1
+[2026-08-09 14:44:05] [DEBUG] [server.h:941 -> process_task()] processed cmd=1 packet=10 from client_id=1
+[2026-08-09 14:44:05] [DEBUG] [server.h:941 -> process_task()] processed cmd=3 packet=11 from client_id=1
+[2026-08-09 14:44:05] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=9 from client_id=1
+[2026-08-09 14:44:05] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=11 from client_id=1
+[2026-08-09 14:44:05] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=10 from client_id=1
+[2026-08-09 14:44:06] [DEBUG] [server.h:941 -> process_task()] processed cmd=2 packet=15 from client_id=1
+[2026-08-09 14:44:06] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=15 from client_id=1
+[2026-08-09 14:44:07] [DEBUG] [server.h:941 -> process_task()] processed cmd=3 packet=17 from client_id=1
+[2026-08-09 14:44:07] [DEBUG] [server.h:941 -> process_task()] processed cmd=6 packet=17 from client_id=1
+[2026-08-09 14:44:17] [INFO ] [server.h:507 -> handle_accept()] connection id: 2 on fd 6
+[2026-08-09 15:05:05] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 15:05:10] [INFO ] [server.h:509 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 15:05:10] [INFO ] [server.h:891 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 15:05:10] [DEBUG] [server.h:944 -> process_task()] processed cmd=8 packet=0 from client_id=1
+[2026-08-09 15:05:10] [DEBUG] [server.h:944 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 15:05:10] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:05:10] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:05:11] [DEBUG] [server.h:944 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 15:05:11] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=3 from client_id=1
+[2026-08-09 15:05:18] [INFO ] [server.h:509 -> handle_accept()] connection id: 2 on fd 6
+[2026-08-09 15:05:33] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 15:05:34] [INFO ] [server.h:509 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 15:05:34] [INFO ] [server.h:891 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 15:05:34] [DEBUG] [server.h:944 -> process_task()] processed cmd=8 packet=0 from client_id=1
+[2026-08-09 15:05:34] [DEBUG] [server.h:944 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 15:05:34] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:05:34] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:05:35] [DEBUG] [server.h:944 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 15:05:35] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=3 from client_id=1
+[2026-08-09 15:05:37] [DEBUG] [server.h:944 -> process_task()] processed cmd=2 packet=6 from client_id=1
+[2026-08-09 15:05:37] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=6 from client_id=1
+[2026-08-09 15:05:37] [DEBUG] [server.h:944 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 15:05:37] [DEBUG] [server.h:944 -> process_task()] processed cmd=6 packet=5 from client_id=1
+[2026-08-09 15:05:53] [INFO ] [server.h:509 -> handle_accept()] connection id: 2 on fd 6
+[2026-08-09 15:21:49] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 15:21:55] [INFO ] [server.h:509 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 15:21:55] [INFO ] [server.h:892 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 15:21:55] [DEBUG] [server.h:945 -> process_task()] processed cmd=8 packet=0 from client_id=1
+[2026-08-09 15:21:55] [DEBUG] [server.h:945 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 15:21:55] [DEBUG] [server.h:945 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:21:55] [DEBUG] [server.h:945 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:21:56] [DEBUG] [server.h:945 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 15:21:56] [DEBUG] [server.h:945 -> process_task()] processed cmd=6 packet=3 from client_id=1
+[2026-08-09 15:22:01] [INFO ] [server.h:509 -> handle_accept()] connection id: 2 on fd 6
+[2026-08-09 15:34:30] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 15:34:37] [INFO ] [server.h:509 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 15:34:37] [INFO ] [server.h:893 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 15:34:37] [DEBUG] [server.h:946 -> process_task()] processed cmd=8 packet=0 from client_id=1
+[2026-08-09 15:34:37] [DEBUG] [server.h:946 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 15:34:37] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:34:37] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:34:38] [DEBUG] [server.h:946 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 15:34:38] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=3 from client_id=1
+[2026-08-09 15:34:42] [INFO ] [server.h:509 -> handle_accept()] connection id: 2 on fd 6
+[2026-08-09 15:35:44] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 15:36:21] [INFO ] [server.h:509 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 15:36:21] [INFO ] [server.h:893 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 15:36:21] [DEBUG] [server.h:946 -> process_task()] processed cmd=8 packet=0 from client_id=1
+[2026-08-09 15:36:21] [DEBUG] [server.h:946 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 15:36:21] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:36:21] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=0 from client_id=1
+[2026-08-09 15:36:22] [DEBUG] [server.h:946 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 15:36:22] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=3 from client_id=1
+[2026-08-09 15:36:24] [DEBUG] [server.h:946 -> process_task()] processed cmd=2 packet=6 from client_id=1
+[2026-08-09 15:36:24] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=6 from client_id=1
+[2026-08-09 15:36:24] [DEBUG] [server.h:946 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 15:36:24] [DEBUG] [server.h:946 -> process_task()] processed cmd=6 packet=5 from client_id=1
+[2026-08-09 15:36:29] [INFO ] [server.h:509 -> handle_accept()] connection id: 2 on fd 6
+[2026-08-09 15:45:49] [INFO ] [server.c:105 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 15:45:57] [INFO ] [server.h:510 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 15:45:57] [INFO ] [server.h:896 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 15:45:57] [DEBUG] [server.h:949 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 15:45:57] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 15:45:57] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 15:45:57] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 15:45:58] [DEBUG] [server.h:949 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 15:45:59] [DEBUG] [server.h:949 -> process_task()] processed cmd=1 packet=4 from client_id=1
+[2026-08-09 15:45:59] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 15:45:59] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=4 from client_id=1
+[2026-08-09 15:46:00] [DEBUG] [server.h:949 -> process_task()] processed cmd=2 packet=7 from client_id=1
+[2026-08-09 15:46:00] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=7 from client_id=1
+[2026-08-09 15:46:01] [INFO ] [server.h:656 -> archive_client()] archive client fd 5
+[2026-08-09 15:46:15] [INFO ] [server.h:510 -> handle_accept()] connection id: 2 on fd 5
+[2026-08-09 15:46:15] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=0 from client_id=2
+[2026-08-09 15:46:15] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=2
+[2026-08-09 15:46:15] [INFO ] [server.h:896 -> identify_task()] RESUMED client_id=1 reconnect=2
+[2026-08-09 15:46:15] [DEBUG] [server.h:949 -> process_task()] processed cmd=9 packet=0 from client_id=2
+[2026-08-09 15:46:15] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=2
+[2026-08-09 15:46:16] [DEBUG] [server.h:949 -> process_task()] processed cmd=0 packet=3 from client_id=2
+[2026-08-09 15:46:17] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=3 from client_id=2
+[2026-08-09 15:46:17] [DEBUG] [server.h:949 -> process_task()] processed cmd=1 packet=4 from client_id=2
+[2026-08-09 15:46:17] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=4 from client_id=2
+[2026-08-09 15:46:18] [DEBUG] [server.h:949 -> process_task()] processed cmd=2 packet=7 from client_id=2
+[2026-08-09 15:46:18] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=7 from client_id=2
+[2026-08-09 15:46:19] [DEBUG] [server.h:949 -> process_task()] processed cmd=4 packet=9 from client_id=2
+[2026-08-09 15:46:19] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=9 from client_id=2
+[2026-08-09 15:46:21] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=12 from client_id=2
+[2026-08-09 15:46:21] [DEBUG] [server.h:949 -> process_task()] processed cmd=1 packet=11 from client_id=2
+[2026-08-09 15:46:21] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=12 from client_id=2
+[2026-08-09 15:46:21] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=11 from client_id=2
+[2026-08-09 15:46:21] [INFO ] [server.h:656 -> archive_client()] archive client fd 5
+[2026-08-09 15:46:23] [INFO ] [server.h:510 -> handle_accept()] connection id: 3 on fd 5
+[2026-08-09 15:46:23] [INFO ] [server.h:896 -> identify_task()] RESUMED client_id=1 reconnect=3
+[2026-08-09 15:46:23] [DEBUG] [server.h:949 -> process_task()] processed cmd=9 packet=0 from client_id=3
+[2026-08-09 15:46:23] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=0 from client_id=3
+[2026-08-09 15:46:23] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=3
+[2026-08-09 15:46:23] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=3
+[2026-08-09 15:46:24] [DEBUG] [server.h:949 -> process_task()] processed cmd=0 packet=3 from client_id=3
+[2026-08-09 15:46:24] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=3 from client_id=3
+[2026-08-09 15:46:26] [DEBUG] [server.h:949 -> process_task()] processed cmd=2 packet=6 from client_id=3
+[2026-08-09 15:46:26] [DEBUG] [server.h:949 -> process_task()] processed cmd=1 packet=5 from client_id=3
+[2026-08-09 15:46:26] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=6 from client_id=3
+[2026-08-09 15:46:26] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=5 from client_id=3
+[2026-08-09 15:46:28] [INFO ] [server.h:510 -> handle_accept()] connection id: 4 on fd 6
+[2026-08-09 15:46:28] [DEBUG] [server.h:949 -> process_task()] processed cmd=4 packet=9 from client_id=3
+[2026-08-09 15:46:28] [INFO ] [server.h:656 -> archive_client()] archive client fd 5
+[2026-08-09 15:46:28] [INFO ] [server.h:896 -> identify_task()] RESUMED client_id=1 reconnect=4
+[2026-08-09 15:46:28] [DEBUG] [server.h:949 -> process_task()] processed cmd=9 packet=0 from client_id=4
+[2026-08-09 15:46:28] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=4
+[2026-08-09 15:46:28] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=0 from client_id=4
+[2026-08-09 15:46:29] [DEBUG] [server.h:949 -> process_task()] processed cmd=0 packet=2 from client_id=4
+[2026-08-09 15:46:29] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=4
+[2026-08-09 15:46:29] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=2 from client_id=4
+[2026-08-09 15:46:30] [INFO ] [server.h:656 -> archive_client()] archive client fd 6
+[2026-08-09 15:46:35] [INFO ] [server.h:510 -> handle_accept()] connection id: 5 on fd 5
+[2026-08-09 15:46:35] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=0 from client_id=5
+[2026-08-09 15:46:35] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=5
+[2026-08-09 15:46:35] [INFO ] [server.h:896 -> identify_task()] RESUMED client_id=1 reconnect=5
+[2026-08-09 15:46:35] [DEBUG] [server.h:949 -> process_task()] processed cmd=9 packet=0 from client_id=5
+[2026-08-09 15:46:35] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=5
+[2026-08-09 15:46:36] [DEBUG] [server.h:949 -> process_task()] processed cmd=0 packet=3 from client_id=5
+[2026-08-09 15:46:36] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=3 from client_id=5
+[2026-08-09 15:46:37] [DEBUG] [server.h:949 -> process_task()] processed cmd=1 packet=5 from client_id=5
+[2026-08-09 15:46:37] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=5 from client_id=5
+[2026-08-09 15:46:37] [INFO ] [server.h:656 -> archive_client()] archive client fd 5
+[2026-08-09 15:46:42] [INFO ] [server.h:510 -> handle_accept()] connection id: 6 on fd 5
+[2026-08-09 15:46:42] [DEBUG] [server.h:949 -> process_task()] processed cmd=3 packet=0 from client_id=6
+[2026-08-09 15:46:42] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=6
+[2026-08-09 15:46:42] [INFO ] [server.h:896 -> identify_task()] RESUMED client_id=1 reconnect=6
+[2026-08-09 15:46:42] [DEBUG] [server.h:949 -> process_task()] processed cmd=9 packet=0 from client_id=6
+[2026-08-09 15:46:42] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=0 from client_id=6
+[2026-08-09 15:46:43] [DEBUG] [server.h:949 -> process_task()] processed cmd=0 packet=3 from client_id=6
+[2026-08-09 15:46:43] [DEBUG] [server.h:949 -> process_task()] processed cmd=7 packet=3 from client_id=6
+[2026-08-09 16:32:00] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:32:07] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:32:07] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:32:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:32:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:32:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:32:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:32:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:32:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:32:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=2 packet=6 from client_id=1
+[2026-08-09 16:32:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=6 from client_id=1
+[2026-08-09 16:32:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 16:32:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=5 from client_id=1
+[2026-08-09 16:33:39] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:33:43] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:33:43] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:33:43] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:33:43] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:33:43] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:33:43] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:33:44] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:33:44] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:35:05] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:35:08] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:35:08] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:35:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:35:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:35:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:35:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:35:09] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:35:09] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:35:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 16:35:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=5 from client_id=1
+[2026-08-09 16:35:10] [INFO ] [server.h:951 -> process_task()] client fd=5 requested graceful shutdown
+[2026-08-09 16:35:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=6 packet=7 from client_id=1
+[2026-08-09 16:35:11] [INFO ] [server.h:659 -> archive_client()] archive client fd 5
+[2026-08-09 16:35:22] [INFO ] [server.h:513 -> handle_accept()] connection id: 2 on fd 5
+[2026-08-09 16:35:22] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=2
+[2026-08-09 16:35:22] [INFO ] [server.h:899 -> identify_task()] RESUMED client_id=1 reconnect=2
+[2026-08-09 16:35:22] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=2
+[2026-08-09 16:35:22] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=2
+[2026-08-09 16:35:22] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=2
+[2026-08-09 16:35:23] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=2
+[2026-08-09 16:35:23] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=2
+[2026-08-09 16:35:25] [DEBUG] [server.h:959 -> process_task()] processed cmd=1 packet=5 from client_id=2
+[2026-08-09 16:35:25] [DEBUG] [server.h:959 -> process_task()] processed cmd=2 packet=6 from client_id=2
+[2026-08-09 16:35:25] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=5 from client_id=2
+[2026-08-09 16:35:25] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=6 from client_id=2
+[2026-08-09 16:35:27] [DEBUG] [server.h:959 -> process_task()] processed cmd=4 packet=9 from client_id=2
+[2026-08-09 16:35:27] [DEBUG] [server.h:959 -> process_task()] processed cmd=1 packet=10 from client_id=2
+[2026-08-09 16:45:23] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:45:26] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:45:26] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:45:26] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:46:00] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:46:05] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:46:05] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:46:05] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:46:05] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:46:05] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:46:05] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:46:06] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:46:06] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:48:02] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:48:07] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:48:07] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:48:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:48:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:48:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:48:07] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:48:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:48:08] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:48:09] [DEBUG] [server.h:959 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 16:48:09] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=5 from client_id=1
+[2026-08-09 16:48:10] [INFO ] [server.h:951 -> process_task()] client fd=5 requested graceful shutdown
+[2026-08-09 16:48:10] [DEBUG] [server.h:959 -> process_task()] processed cmd=6 packet=7 from client_id=1
+[2026-08-09 16:48:11] [INFO ] [server.h:659 -> archive_client()] archive client fd 5
+[2026-08-09 16:49:19] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:49:21] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:49:21] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:49:21] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:49:21] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:49:21] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:49:21] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:49:22] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:49:22] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:50:07] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:50:12] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:50:12] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:50:12] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:50:12] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:50:12] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:50:12] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:50:13] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:50:13] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 16:50:14] [DEBUG] [server.h:959 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 16:50:14] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=5 from client_id=1
+[2026-08-09 16:50:14] [INFO ] [server.h:951 -> process_task()] client fd=5 requested graceful shutdown
+[2026-08-09 16:50:14] [DEBUG] [server.h:959 -> process_task()] processed cmd=6 packet=7 from client_id=1
+[2026-08-09 16:50:15] [INFO ] [server.h:659 -> archive_client()] archive client fd 5
+[2026-08-09 16:51:26] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 16:51:30] [INFO ] [server.h:513 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 16:51:30] [INFO ] [server.h:899 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 16:51:30] [DEBUG] [server.h:959 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 16:51:30] [DEBUG] [server.h:959 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 16:51:30] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:51:30] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 16:51:31] [DEBUG] [server.h:959 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 16:51:31] [DEBUG] [server.h:959 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 17:13:04] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 17:31:36] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 18:05:59] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-09 18:06:02] [INFO ] [server.h:482 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-09 18:06:02] [INFO ] [server.h:877 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-09 18:06:02] [DEBUG] [server.h:977 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-09 18:06:02] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-09 18:06:02] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 18:06:02] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-09 18:06:03] [DEBUG] [server.h:977 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-09 18:06:03] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-09 18:06:05] [DEBUG] [server.h:977 -> process_task()] processed cmd=2 packet=6 from client_id=1
+[2026-08-09 18:06:05] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=6 from client_id=1
+[2026-08-09 18:06:05] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-09 18:06:05] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=5 from client_id=1
+[2026-08-09 18:06:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=11 from client_id=1
+[2026-08-09 18:06:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=4 packet=9 from client_id=1
+[2026-08-09 18:06:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=10 from client_id=1
+[2026-08-09 18:06:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=11 from client_id=1
+[2026-08-09 18:06:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=9 from client_id=1
+[2026-08-09 18:06:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=10 from client_id=1
+[2026-08-09 18:06:09] [INFO ] [server.h:966 -> process_task()] client fd=5 requested graceful shutdown
+[2026-08-09 18:06:09] [DEBUG] [server.h:977 -> process_task()] processed cmd=6 packet=15 from client_id=1
+[2026-08-09 18:06:09] [INFO ] [server.h:638 -> archive_client()] archive client fd 5
+[2026-08-10 14:35:07] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-10 14:35:10] [INFO ] [server.h:482 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-10 14:35:10] [INFO ] [server.h:877 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-10 14:35:10] [DEBUG] [server.h:977 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-10 14:35:10] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-10 14:35:10] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-10 14:35:10] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=0 from client_id=1
+[2026-08-10 14:35:11] [DEBUG] [server.h:977 -> process_task()] processed cmd=0 packet=3 from client_id=1
+[2026-08-10 14:35:11] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=3 from client_id=1
+[2026-08-10 14:35:13] [DEBUG] [server.h:977 -> process_task()] processed cmd=2 packet=6 from client_id=1
+[2026-08-10 14:35:13] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=6 from client_id=1
+[2026-08-10 14:35:13] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-10 14:35:13] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=5 from client_id=1
+[2026-08-10 14:35:16] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=11 from client_id=1
+[2026-08-10 14:35:16] [DEBUG] [server.h:977 -> process_task()] processed cmd=4 packet=9 from client_id=1
+[2026-08-10 14:35:16] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=10 from client_id=1
+[2026-08-10 14:35:16] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=11 from client_id=1
+[2026-08-10 14:35:16] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=9 from client_id=1
+[2026-08-10 14:35:16] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=10 from client_id=1
+[2026-08-10 14:35:17] [DEBUG] [server.h:977 -> process_task()] processed cmd=2 packet=15 from client_id=1
+[2026-08-10 14:35:17] [DEBUG] [server.h:977 -> process_task()] processed cmd=7 packet=15 from client_id=1
+[2026-08-10 15:10:50] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-10 15:10:57] [INFO ] [server.h:482 -> handle_accept()] connection id: 1 on fd 5
+[2026-08-10 15:10:57] [INFO ] [server.h:877 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-10 15:10:57] [DEBUG] [server.h:977 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-10 15:10:57] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-10 15:10:58] [DEBUG] [server.h:977 -> process_task()] processed cmd=0 packet=1 from client_id=1
+[2026-08-10 15:11:00] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=2 from client_id=1
+[2026-08-10 15:11:00] [DEBUG] [server.h:977 -> process_task()] processed cmd=2 packet=3 from client_id=1
+[2026-08-10 15:11:01] [DEBUG] [server.h:977 -> process_task()] processed cmd=4 packet=4 from client_id=1
+[2026-08-10 15:11:03] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=6 from client_id=1
+[2026-08-10 15:11:04] [DEBUG] [server.h:977 -> process_task()] processed cmd=2 packet=7 from client_id=1
+[2026-08-10 15:11:04] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-10 15:11:05] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=8 from client_id=1
+[2026-08-10 15:11:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=4 packet=9 from client_id=1
+[2026-08-10 15:11:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=4 packet=10 from client_id=1
+[2026-08-10 15:11:08] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=11 from client_id=1
+[2026-08-10 15:11:09] [DEBUG] [server.h:977 -> process_task()] processed cmd=1 packet=12 from client_id=1
+[2026-08-10 15:11:10] [DEBUG] [server.h:977 -> process_task()] processed cmd=3 packet=13 from client_id=1
+[2026-08-10 15:11:11] [DEBUG] [server.h:977 -> process_task()] processed cmd=0 packet=14 from client_id=1
+[2026-08-10 15:11:11] [INFO ] [server.h:966 -> process_task()] client fd=5 requested graceful shutdown
+[2026-08-10 15:11:11] [DEBUG] [server.h:977 -> process_task()] processed cmd=6 packet=15 from client_id=1
+[2026-08-10 15:11:11] [INFO ] [server.h:638 -> archive_client()] archive client fd 5
+[2026-08-10 15:17:45] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-10 15:17:53] [INFO ] [server.h:482 -> handle_accept()] connection id: 1 on fd 6
+[2026-08-10 15:17:53] [INFO ] [server.h:881 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-10 15:17:53] [DEBUG] [server.h:981 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-10 15:17:53] [DEBUG] [server.h:981 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-10 15:17:54] [DEBUG] [server.h:981 -> process_task()] processed cmd=0 packet=1 from client_id=1
+[2026-08-10 15:17:56] [DEBUG] [server.h:981 -> process_task()] processed cmd=1 packet=2 from client_id=1
+[2026-08-10 15:17:56] [DEBUG] [server.h:981 -> process_task()] processed cmd=2 packet=3 from client_id=1
+[2026-08-10 15:17:57] [DEBUG] [server.h:981 -> process_task()] processed cmd=4 packet=4 from client_id=1
+[2026-08-10 15:17:59] [DEBUG] [server.h:981 -> process_task()] processed cmd=3 packet=6 from client_id=1
+[2026-08-10 15:18:00] [DEBUG] [server.h:981 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-10 15:18:00] [DEBUG] [server.h:981 -> process_task()] processed cmd=2 packet=7 from client_id=1
+[2026-08-10 15:18:01] [DEBUG] [server.h:981 -> process_task()] processed cmd=3 packet=8 from client_id=1
+[2026-08-10 15:18:03] [DEBUG] [server.h:981 -> process_task()] processed cmd=4 packet=9 from client_id=1
+[2026-08-10 15:18:03] [DEBUG] [server.h:981 -> process_task()] processed cmd=4 packet=10 from client_id=1
+[2026-08-10 15:18:05] [DEBUG] [server.h:981 -> process_task()] processed cmd=1 packet=11 from client_id=1
+[2026-08-10 15:18:05] [DEBUG] [server.h:981 -> process_task()] processed cmd=1 packet=12 from client_id=1
+[2026-08-10 15:18:06] [DEBUG] [server.h:981 -> process_task()] processed cmd=3 packet=13 from client_id=1
+[2026-08-10 15:18:07] [DEBUG] [server.h:981 -> process_task()] processed cmd=0 packet=14 from client_id=1
+[2026-08-10 15:18:09] [DEBUG] [server.h:981 -> process_task()] processed cmd=2 packet=16 from client_id=1
+[2026-08-10 15:18:09] [DEBUG] [server.h:981 -> process_task()] processed cmd=1 packet=15 from client_id=1
+[2026-08-10 15:18:11] [DEBUG] [server.h:981 -> process_task()] processed cmd=1 packet=17 from client_id=1
+[2026-08-10 15:18:11] [DEBUG] [server.h:981 -> process_task()] processed cmd=2 packet=18 from client_id=1
+[2026-08-10 15:44:13] [INFO ] [server.c:107 -> main()] Server listening on /tmp/myapp.sock (Ctrl+C to stop)
+[2026-08-10 15:44:19] [INFO ] [server.h:482 -> handle_accept()] connection id: 1 on fd 6
+[2026-08-10 15:44:19] [INFO ] [server.h:915 -> identify_task()] NEW client_id=1 reconnect=1
+[2026-08-10 15:44:19] [DEBUG] [server.h:1015 -> process_task()] processed cmd=9 packet=0 from client_id=1
+[2026-08-10 15:44:19] [DEBUG] [server.h:1015 -> process_task()] processed cmd=3 packet=0 from client_id=1
+[2026-08-10 15:44:20] [DEBUG] [server.h:1015 -> process_task()] processed cmd=0 packet=1 from client_id=1
+[2026-08-10 15:44:22] [DEBUG] [server.h:1015 -> process_task()] processed cmd=1 packet=2 from client_id=1
+[2026-08-10 15:44:22] [DEBUG] [server.h:1015 -> process_task()] processed cmd=2 packet=3 from client_id=1
+[2026-08-10 15:44:23] [DEBUG] [server.h:1015 -> process_task()] processed cmd=4 packet=4 from client_id=1
+[2026-08-10 15:44:25] [DEBUG] [server.h:1015 -> process_task()] processed cmd=3 packet=6 from client_id=1
+[2026-08-10 15:44:26] [DEBUG] [server.h:1015 -> process_task()] processed cmd=1 packet=5 from client_id=1
+[2026-08-10 15:44:26] [DEBUG] [server.h:1015 -> process_task()] processed cmd=2 packet=7 from client_id=1
+[2026-08-10 15:44:26] [INFO ] [server.h:1004 -> process_task()] client fd=6 requested graceful shutdown
+[2026-08-10 15:44:26] [DEBUG] [server.h:1015 -> process_task()] processed cmd=6 packet=8 from client_id=1
+[2026-08-10 15:44:26] [INFO ] [server.h:638 -> archive_client()] archive client fd 6
