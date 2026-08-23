@@ -1,6 +1,6 @@
 # IoT Gateway
 
-A multithreaded IoT gateway daemon written in C for Linux. It exposes a binary TCP protocol
+A multithreaded IoT gateway daemon written in C for Linux. It exposes a **TLS-secured** binary TCP protocol
 (JSON payload) for controlling sensors/actuators, plus a UDP discovery service.
 
 ## Architecture
