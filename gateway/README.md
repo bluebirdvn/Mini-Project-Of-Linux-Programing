@@ -21,14 +21,6 @@ make          # builds gateway, gwctl, gwauto
 make clean
 ```
 
-## Programs
-
-| Binary | Purpose |
-|---|---|
-| `gateway` | The server daemon. |
-| `gwctl` | One-shot CLI tool to send a single request and print the response. Good for manual testing. |
-| `gwauto` | Long-running client. Polls sensors every 5s and auto-controls actuators based on thresholds. |
-
 ## Usage
 
 Start the gateway:
