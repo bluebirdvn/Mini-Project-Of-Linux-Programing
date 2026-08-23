@@ -149,7 +149,7 @@ static int setup_epoll(void)
     return epoll_fd;
 }
 
-int server_init(struct server* sv)
+int server_init(struct server* sv, const char* cert_path, const char* key_path)
 {
     if (sv == NULL) {
         LOG_ERROR("null param");
@@ -194,6 +194,13 @@ int server_init(struct server* sv)
         return -1;
     }
 
+#if ENABLE_TLS
+    sv->tls_ctx = create_server_ctx(cert_path, key_path);
+    if (sv->tls_ctx == NULL) {
+        LOG_ERROR("can't init tls");
+        return -1;
+    }
+#endif
     if (epoll_add(sv->epoll_fd, EPOLLIN, sv->listen_fd) < 0) {
         return -1;
     }
@@ -213,6 +220,44 @@ int server_init(struct server* sv)
 
     return 0;
 }
+
+
+#if ENABLE_TLS
+static int tls_try_handshake(struct server *sv, int slot)
+{
+    if (sv == NULL || slot < 0) {
+        LOG_ERROR("invalid params");
+        return -1;
+    }
+
+    struct client *client = &sv->clients[slot];
+    int ret = SSL_do_handshake(client->ssl);
+    
+    int fd = client->fd;
+    if (ret == 1) {
+        client->tls_handshake_done = true;
+        epoll_mod(sv->epoll_fd, EPOLLIN, fd);
+        LOG_INFO("slot=%d TLS handshake OK (%s / %s)", slot, SSL_get_version(client->ssl), SSL_get_cipher(client->ssl));
+        return 0;
+    }
+    
+    int err = SSL_get_error(client->ssl, ret);
+    if (err == SSL_ERROR_WANT_READ) {
+        epoll_mod(sv->epoll_fd, EPOLLIN, fd);
+        return 1;
+    }
+    if (err == SSL_ERROR_WANT_WRITE) {
+        epoll_mod(sv->epoll_fd, EPOLLIN | EPOLLOUT, fd);
+        return 1;
+    }
+ 
+    LOG_WARN("slot=%d TLS handshake failed (SSL_get_error=%d)", slot, err);
+    close_client(sv->clients, slot);
+    return -1;
+}
+
+#endif
+
 
 int handle_accept_client(struct server* sv)
 {
@@ -237,6 +282,7 @@ int handle_accept_client(struct server* sv)
         return -1;
     }
 
+
     int slot = client_alloc(sv->clients, MAX_CLIENTS, client_fd, &client_addr);
     if (slot < 0) {
         LOG_ERROR("not find empty slot in clients");
@@ -250,6 +296,29 @@ int handle_accept_client(struct server* sv)
         close_client(sv->clients, slot); 
         return -1;
     }
+    
+
+#if ENABLE_TLS
+    struct client* client = &sv->clients[slot];
+    client->ssl = SSL_new(sv->tls_ctx);
+
+    if (client->ssl == NULL) {
+        LOG_WARN("ssl new for client failed");
+        close_client(sv->clients, slot);
+        return -1;
+    }
+
+    ret = SSL_set_fd(client->ssl, client_fd);
+    if (ret == 0) {
+        LOG_ERROR("ssl set fd failed");
+        close_client(sv->clients, slot);
+        return -1;
+    }
+
+    SSL_set_accept_state(client->ssl);
+    tls_try_handshake(sv, slot);
+
+#endif
 
     LOG_INFO("add new client, slot=%d", slot);
     return 0;
@@ -270,12 +339,26 @@ int handle_request_client(struct server *sv, int client_fd)
         return -1;
     }
 
+#if ENABLE_TLS
+    if (c->tls_handshake_done == false) {
+        LOG_INFO("continuing handshake");
+        int ret = tls_try_handshake(sv, slot);
+        if (ret < 0) {
+            return -1;
+        }
+        return 0;
+    }
+#endif
     bool allow = request_allow(&c->rate);
+
     if (allow == false) {
         LOG_WARN("reach limit request per second, slot=%d", slot);
         char discard[512];
+#if ENABLE_TLS
+        while (SSL_read(c->ssl, discard, sizeof(discard)) > 0) { 
+#else
         while (recv(client_fd, discard, sizeof(discard), MSG_DONTWAIT) > 0) { 
-
+#endif
          }
         return 1;
     }
@@ -372,8 +455,18 @@ int handle_client_sendable(struct server* sv, int client_fd)
     if (atomic_load(&c->alive) == false) {
         return -1;
     }
-
+#if ENABLE_TLS
+    if (c->tls_handshake_done == false) {
+        int ret_tls = tls_try_handshake(sv, slot);
+        if (ret_tls < 0) {
+            return -1;
+        }
+        return 0;
+    }
+    int ret = client_flush_tx_tls(c, sv->epoll_fd);
+#else
     int ret = flush_message_from_queue(c);
+#endif
     if (ret < 0) {
         LOG_ERROR("flush client message failed, slot=%d", slot);
         close_client(sv->clients, slot); 
@@ -487,7 +580,6 @@ int server_shutdown(struct server* sv)
     pthread_mutex_lock(&sv->lock);
     pthread_cond_signal(&sv->stop);
     pthread_mutex_unlock(&sv->lock);
-
     return 0;
 }
 
@@ -502,6 +594,11 @@ int server_cleanup(struct server* sv)
         close_client(sv->clients, i);
         pthread_mutex_destroy(&sv->clients[i].lock);
     }
+
+    #if ENABLE_TLS
+        tls_ctx_destroy(sv->tls_ctx);
+    #endif
+
 
     task_queue_destroy(&sv->tasks);
     response_queue_destroy(&sv->response); 
@@ -611,8 +708,11 @@ int client_read_message(struct server* sv, struct client* client)
         switch(client->stage) {
             case READ_HEADER: {
                 size_t remain = HEADER_SIZE - client->rx_len;
+#if ENABLE_TLS
+                ssize_t n = SSL_read(client->ssl, client->data_receive + client->rx_len, remain);
+#else
                 ssize_t n = recv(client->fd, client->data_receive + client->rx_len, remain, MSG_DONTWAIT);
-
+#endif
                 if (n < 0) {
                     int err = errno;
                     if (err == EINTR) {
@@ -682,8 +782,13 @@ int client_read_message(struct server* sv, struct client* client)
                 uint32_t length = decode_32_bit(client->data_receive + 8);
                 size_t total_needed = (size_t)length + HEADER_SIZE + CRC_SIZE;
                 size_t remain = length + HEADER_SIZE + CRC_SIZE - client->rx_len;
-                size_t n = recv(client->fd, client->data_receive + client->rx_len, remain, MSG_DONTWAIT);
 
+#if ENABLE_TLS
+                ssize_t n = SSL_read(client->ssl, client->data_receive + client->rx_len, remain);
+#else
+                ssize_t n = recv(client->fd, client->data_receive + client->rx_len, remain, MSG_DONTWAIT);
+#endif
+                
                 if (n < 0) {
                     int err = errno;
                     if (err == EINTR) {

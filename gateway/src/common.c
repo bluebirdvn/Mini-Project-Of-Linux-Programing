@@ -6,7 +6,7 @@
 int epoll_add(int epoll_fd, int event, int fd)
 {
     struct epoll_event ev;
-    ev.events = op;
+    ev.events = event;
     ev.data.fd = fd;
 
     int ret = epoll_ctl(epoll_fd, EPOLL_CTL_ADD, fd, &ev);
@@ -21,7 +21,7 @@ int epoll_add(int epoll_fd, int event, int fd)
 int epoll_mod(int epoll_fd, int event, int fd)
 {
     struct epoll_event ev;
-    ev.events = op;
+    ev.events = event;
     ev.data.fd = fd;
 
     int ret = epoll_ctl(epoll_fd, EPOLL_CTL_MOD, fd, &ev);

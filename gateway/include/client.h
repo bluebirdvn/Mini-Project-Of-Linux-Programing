@@ -1,6 +1,7 @@
 #ifndef _CLIENT_H
 #define _CLIENT_H
 
+#include "common.h"
 #include "protocol_message.h"
 #include "rate_limit.h"
 #include "queue.h"
@@ -12,6 +13,10 @@
 #include <stdbool.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
+
+#if ENABLE_TLS
+#include <openssl/ssl.h>
+#endif
 
 struct data_transmit {
     uint8_t *data;
@@ -39,6 +44,12 @@ struct client {
     struct sockaddr_in addr;
 
     uint64_t last_active_ms;
+#if ENABLE_TLS
+    SSL *ssl;
+    bool tls_handshake_done;
+    bool tls_read_pending;
+#endif
+
 };
 
 
@@ -139,5 +150,16 @@ uint8_t* packet_response_message(struct response* response);
  */
 struct task* build_task(struct client* client, struct header_packet *header, int slot);
 
+
+#if ENABLE_TLS
+
+/**
+ * @brief 
+ * 
+ * @param client 
+ * @return int 
+ */
+int client_flush_tx_tls(struct client* client, int epoll_fd);
+#endif
 
 #endif

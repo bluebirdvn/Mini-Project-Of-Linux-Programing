@@ -24,6 +24,7 @@
 #define RATE_LIMIT_REFILL_SEC 50.0
 #define EPOLL_TIMEOUT_MS 1000
 
+#define ENABLE_TLS 1
 
 static uint64_t inline now_ms(void)
 {

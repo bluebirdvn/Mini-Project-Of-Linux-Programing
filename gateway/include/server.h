@@ -5,8 +5,9 @@
 #include "client.h"
 #include "queue.h"
 #include <signal.h>
-
-
+#if ENABLE_TLS
+#include "tls.h"
+#endif
 
 struct server {
     int listen_fd;
@@ -23,6 +24,10 @@ struct server {
     pthread_cond_t stop;
     pthread_mutex_t lock;
     atomic_bool shutdown;
+#if ENABLE_TLS
+    SSL_CTX *tls_ctx;
+#endif
+
 };
 
 
@@ -32,7 +37,7 @@ struct server {
  * @param sv pointer to struct server
  * @return int 0 if success, -1 if failed
  */
-int server_init(struct server* sv);
+int server_init(struct server* sv, const char* cert_path, const char* key_path);
 
 
 /**

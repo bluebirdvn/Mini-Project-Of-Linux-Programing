@@ -14,6 +14,11 @@
 #include <errno.h>
 #include <unistd.h>
 
+#if ENABLE_TLS
+#include <openssl/ssl.h>
+#endif
+
+#include "common.h"
 #include "client.h"
 #include "logger.h"
 #include "rate_limit.h"
@@ -36,6 +41,13 @@ int clients_init(struct client* client, int max_clients)
         client[i].rx_len = 0;
         client[i].stage = READ_HEADER;
         pthread_mutex_init(&client[i].lock, NULL);
+#if ENABLE_TLS
+        client[i].ssl = NULL;
+        client[i].tls_handshake_done = false;
+        client[i].tls_read_pending = false;
+#endif
+
+
     }
 
     return 0;
@@ -72,6 +84,11 @@ int client_alloc(struct client* client, int max_clients, int fd, struct sockaddr
     client[slot].tail = NULL;
     client[slot].head = NULL;
     client[slot].bytes_need_to_send = 0;
+#if ENABLE_TLS
+    client[slot].ssl = NULL;
+    client[slot].tls_handshake_done = false;
+    client[slot].tls_read_pending = false;
+#endif    
     rate_limit_init(RATE_LIMIT_CAP, RATE_LIMIT_REFILL_SEC, &client[slot].rate);
 
     atomic_store(&client[slot].alive, true);
@@ -212,6 +229,7 @@ int flush_message_from_queue(struct client* client)
     
     
     while(send_data != NULL) {
+        
         int ret = send_data_to_client(client->fd, send_data->data, send_data->len, 0);
 
         if (ret < 0) {
@@ -305,7 +323,13 @@ int close_client(struct client* clients, int slot)
         close(client->fd);
         client->fd = -1;
     }
-
+#if ENABLE_TLS
+    if (client->ssl) {
+        SSL_shutdown(client->ssl);
+        SSL_free(client->ssl);
+        client->ssl = NULL;
+    }
+#endif
     atomic_store(&client->alive, false);
 
     struct data_transmit* data = client->head;
@@ -351,3 +375,118 @@ struct task* build_task(struct client *client, struct header_packet *header, int
 
     return t;
 }
+
+#if ENABLE_TLS
+
+
+static int send_data_to_client_tls(struct client* client, uint8_t* data, size_t len, int flags)
+{
+    if (client == NULL || data == NULL) {
+        LOG_ERROR("invalid params");
+        return -1;
+    }
+ 
+    size_t sent_total = 0;
+    while (sent_total < len) {
+        ssize_t ret = SSL_write(client->ssl, data + sent_total, len - sent_total);
+        if (ret < 0) {
+            int err = SSL_get_error(client->ssl, ret);
+
+            if (sent_total > 0) {
+                return (int)sent_total;
+            }
+
+            if (err == SSL_ERROR_WANT_WRITE) {
+                return -2;
+            }
+            if (err == SSL_ERROR_WANT_READ) {
+                return -3;
+            }
+
+            if (err == SSL_ERROR_ZERO_RETURN) {
+                return 0;
+            }
+            return -1; 
+        }
+        if (ret == 0) {
+            LOG_WARN("client close");
+            return 1;
+        }
+        sent_total += (size_t)ret;
+    }
+ 
+    return (int)sent_total; 
+}
+
+
+
+int client_flush_tx_tls(struct client* client, int epoll_fd)
+{
+    if (client == NULL) {
+        LOG_ERROR("null param");
+        return -1;
+    }
+
+
+    pthread_mutex_lock(&client->lock);
+    
+    if (client->head == NULL) {
+        pthread_mutex_unlock(&client->lock);
+        LOG_WARN("buffer empty");
+        return 0;
+    }
+
+    struct data_transmit* send_data = dequeue_message(client);
+    
+    
+    while(send_data != NULL) {
+        uint8_t *data = send_data->data + send_data->offset;
+        size_t remain = send_data->len - send_data->offset;
+
+        int ret = send_data_to_client_tls(client, data, remain, 0);
+        if (ret == -1 || ret == 0) {
+            free(send_data->data);
+            free(send_data);
+            pthread_mutex_unlock(&client->lock);
+            return (ret == 0) ? 2 : -1;
+        } else if (ret == -2 || ret == -3) {
+
+            if (ret == -2) {
+                epoll_mod(epoll_fd, EPOLLIN | EPOLLOUT, client->fd);
+            } else {
+                epoll_mod(epoll_fd, EPOLLIN, client->fd);
+            }
+            pthread_mutex_unlock(&client->lock);
+            
+            return 1;
+
+        } else if (ret > 0) {
+            send_data->offset += ret;
+            client->bytes_need_to_send -= ret;
+            client->last_active_ms = now_ms();   
+            
+            if (send_data->offset < send_data->len) {
+                epoll_mod(epoll_fd, EPOLLIN | EPOLLOUT, client->fd);
+                pthread_mutex_unlock(&client->lock);
+                return 1;
+            } else {
+                client->head = send_data->next_data;
+                if (client->head == NULL) {
+                    client->tail = NULL;
+                }
+                free(send_data->data);
+                free(send_data);
+                
+                send_data = client->head;
+            }
+        }
+    }
+
+    epoll_mod(epoll_fd, EPOLLIN, client->fd);
+    client->last_active_ms = now_ms();
+    pthread_mutex_unlock(&client->lock);
+    
+    return 0;
+}
+
+#endif
