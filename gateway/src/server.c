@@ -571,7 +571,7 @@ int server_shutdown(struct server* sv)
         return -1;
     }
 
-    LOG_INFO("shutdown duoc yeu cau, bao hieu cho cac thread dung lai...");
+    LOG_INFO("shutdown server");
 
     atomic_store(&sv->shutdown, true);
 

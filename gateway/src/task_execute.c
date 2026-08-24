@@ -20,7 +20,7 @@ int init_aht30_sensor(void* arg)
     dev->base.sensor_fd = open(AHT30_DEVICE_PATH, O_RDONLY);
     if (dev->base.sensor_fd < 0) {
         LOG_WARN("can't open %s, use simulation file", AHT30_DEVICE_PATH);
-        dev->base.sensor_fd = open("./mock_aht30.txt", O_CREAT | O_RDWR, 0644);
+        dev->base.sensor_fd = open("./test_aht30.txt", O_CREAT | O_RDWR, 0644);
     }
 
     if (dev->base.sensor_fd < 0) {
@@ -83,7 +83,7 @@ int init_bh1750_sensor(void* arg)
 
     dev->base.sensor_fd = open(BH1750_DEVICE_PATH, O_RDONLY);
     if (dev->base.sensor_fd < 0) {
-        dev->base.sensor_fd = open("./mock_bh1750.txt", O_CREAT | O_RDWR, 0644);
+        dev->base.sensor_fd = open("./test_bh1750.txt", O_CREAT | O_RDWR, 0644);
     }
     if (dev->base.sensor_fd < 0) {
         LOG_ERROR("bad fd");
@@ -138,7 +138,7 @@ int init_ac_actuator(void* arg) {
 
     ac->base.actuator_fd = open(AC_DEVICE_PATH, O_WRONLY);
     if (ac->base.actuator_fd < 0) {
-        ac->base.actuator_fd = open("./mock_ac.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
+        ac->base.actuator_fd = open("./test_ac.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
     }
     if (ac->base.actuator_fd < 0) return -1;
 
@@ -180,7 +180,7 @@ int init_led_actuator(void* arg) {
     // Ghi trực tiếp vào file PWM Duty Cycle của Linux Kernel Sysfs
     led->base.actuator_fd = open(LED_PWM_PATH, O_WRONLY);
     if (led->base.actuator_fd < 0) {
-        led->base.actuator_fd = open("./mock_led_pwm.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
+        led->base.actuator_fd = open("./test_led_pwm.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
     }
     if (led->base.actuator_fd < 0) return -1;
 
@@ -219,7 +219,7 @@ int init_fan_actuator(void* arg) {
 
     f->base.actuator_fd = open(FAN_DEVICE_PATH, O_WRONLY);
     if (f->base.actuator_fd < 0) {
-        f->base.actuator_fd = open("./mock_fan.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
+        f->base.actuator_fd = open("./test_fan.txt", O_CREAT | O_WRONLY | O_TRUNC, 0644);
     }
     if (f->base.actuator_fd < 0) return -1;
 

@@ -11,8 +11,9 @@
 #include <netinet/in.h>
 #include <netinet/tcp.h>
 #include <arpa/inet.h>
-#include <cjson/cJSON.h>
 
+
+#include <../include/cJSON.h>
 #include "../include/protocol_message.h"
 #include "../include/common.h"
 #include "../include/crc.h"
@@ -399,9 +400,7 @@ static void apply_actuator_if_changed(int fd, uint32_t *request_id, int device_i
     if (do_request(fd, MSG_SET_ACTUATOR, req, (*request_id)++, &resp) == 0) {
         printf("%s: %s -> %s (value=%.1f)\n",
                name,
-               (*current_state == -1) ? "unknown" : (*current_state ? "ON" : "OFF"),
-               want_state ? "ON" : "OFF",
-               sensor_value);
+               (*current_state == -1) ? "unknown" : (*current_state ? "ON" : "OFF"), want_state ? "ON" : "OFF", sensor_value);
 
         *current_state = want_state;
         cJSON_Delete(resp);
@@ -436,7 +435,7 @@ int main(int argc, char **argv)
     int fan_state;
 
     if (argc < 3) {
-        fprintf(stderr, "Usage: %s <host> <port>\n", argv[0]);
+        fprintf(stderr, "Usage: %s host port\n", argv[0]);
         return 1;
     }
 

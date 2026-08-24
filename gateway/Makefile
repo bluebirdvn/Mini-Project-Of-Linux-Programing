@@ -2,6 +2,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -O2 -Iinclude -fsanitize=address -fno-omit-frame-pointer 
 LDFLAGS= -pthread -fsanitize=address
+LDLIBS = -lssl -lcrypto
 
 BIN_DIR = bin
 OBJ_DIR = obj
@@ -18,7 +19,7 @@ all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	mkdir -p $(dir $@)
-	$(CC) $^ -o $@ $(LDFLAGS)
+	$(CC) $^ -o $@ $(LDFLAGS) $(LDLIBS)
 
 $(OBJ_DIR)/%.o: %.c
 	mkdir -p $(dir $@)
